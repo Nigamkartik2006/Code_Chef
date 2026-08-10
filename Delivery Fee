@@ -1,0 +1,41 @@
+You are ordering food that costs 
+A
+A rupees.
+
+Normally, a delivery fee of 
+B
+B rupees is added to the order. However, if the food cost is at least 
+K
+K rupees, the delivery is free.
+
+Find the total amount you need to pay.
+
+
+
+Solution
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		 Scanner sc=new Scanner(System.in);
+		 int A=sc.nextInt();
+		 int B=sc.nextInt();
+		 int K=sc.nextInt();
+		 int total_bill=0;
+		 
+		 if(A>=K){
+		     total_bill=A;
+		     System.out.println(total_bill);
+		 }
+		 else{
+		     total_bill=A+B;
+		  System.out.println(total_bill);
+		 }
+
+	}
+}
